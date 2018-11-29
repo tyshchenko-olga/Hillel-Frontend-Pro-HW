@@ -3,18 +3,19 @@ function SuperMath() {
 }
 
 SuperMath.prototype.check = function (obj) {
-    var conf = confirm('Do you want to' + obj.X + obj.znak + obj.Y + '?');
+    var conf = confirm('Do you want to perform ' + obj.X + obj.znak + obj.Y + ' ?');
 
     if (conf === true) {
         console.log(doMath(obj));
     } else {
-        p.input();
-        console.log(doMath(obj));
+
+        console.log(doMath(p.input()));
 
     }
 };
 
 SuperMath.prototype.input = function () {
+    var obj = {};
     do {
         obj.X = +prompt('Enter "X"');
     } while (isNaN(obj.X));
@@ -30,14 +31,7 @@ SuperMath.prototype.input = function () {
     return obj;
 };
 
-
-var obj = {
-    X: 12,
-    Y: 3,
-    znak: '/'
-};
-
-function doMath() {
+function doMath(obj) {
     var result;
     var z = obj.znak;
     var x = obj.X;
@@ -70,4 +64,4 @@ function doMath() {
 
 var p = new SuperMath();
 
-p.check(obj);
+p.check({X: 12, znak: '/', Y: 3});
