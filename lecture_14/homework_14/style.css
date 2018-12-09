@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2rem;
+}
+
+input {
+    width: 12rem;
+    margin-right: 1rem;
+
+}
+
+.diagram-block {
+    width: 2rem;
+    height: 108px;
+    border: 1px solid black;
+    margin: 2rem;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.range_display {
+    background-color: green;
+    width: 100%;
+
+}
+
+.percent_display {
+    background-color: red;
+    width: 100%;
+
+
+}
