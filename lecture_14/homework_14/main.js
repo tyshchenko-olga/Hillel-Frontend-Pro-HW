@@ -28,16 +28,16 @@ window.onload = function () {
     function culcComission(x) {
         var height;
         if (x >= 0 && x < 20) {
-            height = 2 + 'px'
+            height = x * 0.02 + 'px'
         }
         if (x >= 20 && x < 50) {
-            height = 4 + 'px'
+            height = x * 0.04 + 'px'
         }
         if (x >= 50 && x < 75) {
-            height = 6 + 'px'
+            height = x * 0.06 + 'px'
         }
         if (x >= 75 && x <= 100) {
-            height = 8 + 'px'
+            height = x * 0.08 + 'px'
         }
 
         return height;
